@@ -1,0 +1,137 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+body {
+    background: url(img/tree.jpg);
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255 ,.7);
+    position: relative;
+    border-radius: 10px;
+    padding: 3em;
+    margin: 10px;
+    min-width: 350px;
+    box-shadow: 2px 2px 20px var(--snow);
+}
+
+p {
+    font-size: 45px;
+}
+
+ /* WALLPAPER */
+ 
+ .leaf-img {
+    background: url(img/leaf.jpg);
+    background-size: cover;
+}
+
+.ornament-img {
+    background: url(img/ornament.jpg);
+    background-size: cover;
+}
+.reindeer-img {
+    background: url(img/reindeer.jpg);
+    background-size: cover;
+}
+
+.christmas {
+    font-family: 'Mountains of Christmas', cursive;
+    color: var(--dark-green);
+    background-color: var(--wine-red);
+    background-size: cover;
+}
+
+.snow {
+    font-family: 'Lobster Two', cursive;
+    color: var(--snow);
+    background: url(img/snow.jpg);
+    background-size: cover;
+}
+
+.snow .container {
+    color: var(--bright-red);
+    background: rgba(255, 255, 255 ,.7);
+    box-shadow: 2px 2px 20px var(--snow);
+}
+a
+ {
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wallpaper-container {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+
+
+.menu-title {
+  margin-bottom: 0;
+  padding: 10px;
+  color: var(--snow);
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(225, 6, 0 ,.7);
+  box-shadow: 2px 2px 20px var(--bright-red);
+  border-radius: 5px;
+} 
+
+.menu-dropdown {
+  text-align: center;
+  background: rgba(255, 255, 255 ,.5);
+}
+
+
+.menu-dropdown > * {
+  overflow: hidden;
+  padding: 15px;
+  background: rgba(255, 255, 255 ,.5);
+  color: var(--dark-green);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 20px var(--light-green);
+  transition: all .2s ease-in-out;
+}
+
+.menu-dropdown > :hover {
+  background: rgba(25, 25, 25 ,0);
+}
+
+.menu:not(:hover) > .menu-dropdown > * {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+
+ }
+ 
